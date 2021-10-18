@@ -30,7 +30,7 @@ const LanguageMenu = (props: LanguageMenuOwnProps) => {
     <Menu
       transformOrigin={{ vertical: 'top', horizontal: 'left' }}
       anchorEl={props.anchor}
-      // keepMounted
+      keepMounted
       open={props.open}
       // onClose={props.handleClose}
     >

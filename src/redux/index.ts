@@ -7,11 +7,11 @@ export type State = ReturnType<typeof reducer>
 
 const reducer = combineReducers({
   boardData: boardSlice.reducer,
-  locale: localizeReducer
+  localize: localizeReducer
 })
 
 export default configureStore({
   reducer,
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
-  // middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
+  // middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 })

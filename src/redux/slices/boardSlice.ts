@@ -1,5 +1,4 @@
-import { createSlice, PayloadAction, } from "@reduxjs/toolkit"
-import { Board } from "../../model/board"
+import { createSlice } from "@reduxjs/toolkit"
 import _ from 'lodash'
 
 
