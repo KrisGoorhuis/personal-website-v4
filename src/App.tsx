@@ -1,26 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from '@mui/system'
+import { LocalizeContextProps, LocalizeProvider, Translate, withLocalize } from 'react-localize-redux'
+import ApplicationBar from './components/ApplicationBar'
+import theme from './Theme/Main'
+import translations, { translationPaths } from './translations/translations'
+import { renderToStaticMarkup } from "react-dom/server"
+import { Provider } from 'react-redux'
+import store from './redux'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+interface AppProps extends LocalizeContextProps {
+
 }
 
-export default App;
+function App(props: AppProps) {
+
+  // props.initialize({
+  //   languages: [
+  //     { name: "English", code: "en" },
+  //     { name: "French", code: "fr" }
+  //   ],
+  //   translation: translations,
+  //   options: { renderToStaticMarkup }
+  // })
+
+
+  return (
+    <Provider store={store}>
+      <LocalizeProvider>
+        <ThemeProvider theme={theme}>
+
+          <ApplicationBar>
+            {/* <CssBaseline /> Necessary? */}
+
+            <Translate id={"stuff.common"}></Translate>
+            text
+          </ApplicationBar>
+
+        </ThemeProvider>
+      </LocalizeProvider>
+    </Provider>
+  )
+}
+
+export default withLocalize(App)
