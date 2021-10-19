@@ -85,7 +85,7 @@ const ApplicationBar = (props: ApplicationBarProps) => {
 
         </Toolbar>
       </AppBar>
-      <main style={{ marginTop: 100 }}>
+      <main style={{ margin: 'auto', marginTop: 100 }}>
         {props.children}
       </main>
 

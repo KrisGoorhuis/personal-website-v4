@@ -3,6 +3,7 @@ import { Box, Container, Typography, Stack, Button, Grid, Card, CardMedia, CardC
 import { LocalizeContextProps, Translate, withLocalize } from 'react-localize-redux'
 import ApplicationBar from './components/ApplicationBar'
 import ProjectCard from './components/ProjectCard/ProjectCard';
+import { Projects } from './projects';
 
 
 
@@ -11,9 +12,6 @@ interface AppProps extends LocalizeContextProps {
 }
 
 function App(props: AppProps) {
-
-  const Projects = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
 
   return (
     <ApplicationBar>
