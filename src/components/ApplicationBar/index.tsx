@@ -6,7 +6,7 @@ import LanguageMenu from "./LanguageMenu/LanguageMenu"
 import Language from '@mui/icons-material/Language'
 import { SupportedLanguageCodes } from "../../model"
 import { translationPaths } from "../../translations/translations"
-
+import transparentLogo from '../../assets/images/transparentLogoDark.png'
 
 interface ApplicationBarProps extends LocalizeContextProps {
   children: any
@@ -66,30 +66,33 @@ const ApplicationBar = (props: ApplicationBarProps) => {
   };
 
 
-
   return (
     <div style={{ display: 'flex' }}>
-      <AppBar color="default" position="fixed" sx={{ bgcolor: 'rgba(255, 255, 255, .7)', backdropFilter: 'blur(3px)' }}>
+      <AppBar color="default" position="fixed" sx={{ bgcolor: `rgba(242, 166, 90, .7)` }}>
         <Toolbar variant="dense" >
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }} >
-            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-              {/* <img src={"TODO"} alt="Logo" /> */}
-              <ColorLens />
-              <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1, marginLeft: 2 }}>
+
+            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', height: 45 }}>
+              <img style={{height: '100%', transform: 'scale(6)', marginLeft: 10}} src={transparentLogo} alt="Logo" />
+              {/* <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1, marginLeft: 2 }}>
                 <Translate id={translationPaths.toolbar.title} />
-              </Typography>
+              </Typography> */}
             </div>
+
             <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
               <Construction />
               <Typography style={{ margin: 10 }}>
                 <Translate id={translationPaths.toolbar.construction} />
               </Typography>
+              <Construction />
             </div>
+
             <IconButton
               onClick={handleLanguageMenu}
             >
               <Language />
             </IconButton>
+
           </div>
 
           <LanguageMenu anchor={anchorEl} open={Boolean(anchorEl)} handleClose={handleCloseMenu} />

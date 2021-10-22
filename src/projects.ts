@@ -117,3 +117,13 @@ export const Projects: Project[] = [
       technologies: ['SASS']
    },
 ]
+
+export const CorporateProject: Project = {
+   name: translationPaths.projects.life.name,
+   description: translationPaths.projects.life.description,
+   imageSmall: placeholder,
+   imageLarge: gameOfLife,
+   githubLink: null,
+   liveLink: null,
+   technologies: ['React.js', 'Redux (Thunk, Toolkit)', 'Typescript', 'Material UI', 'REST APIs', ]
+}

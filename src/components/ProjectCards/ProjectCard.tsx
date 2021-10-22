@@ -6,12 +6,15 @@ import { Project } from "../../model"
 
 interface ProjectCardProps {
    project: Project
+   isWide?: boolean
 }
 
 const ProjectCard = (props: ProjectCardProps) => {
 
+
+
    return (
-      <Grid item key={JSON.stringify(props.project)} xs={12} sm={6} md={4}>
+      <Grid item key={JSON.stringify(props.project)} xs={props.isWide ? 12 : 12} sm={props.isWide ? 12 : 6} md={props.isWide ? 12 : 4}>
          <Card
             sx={{ height: '300px', width: '250px', display: 'flex', flexDirection: 'column', margin: 'auto' }}
          >

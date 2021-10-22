@@ -63,9 +63,27 @@ const translations = {
     description: [
       "When not developing, I'm coming up with descriptions for hobby and learning projects. Read a neat description of them and view a few below.",
       "When not developing, I'm coming up with descriptions for hobby and learning projects. Read a neat description of them and view a few below."
+    ],
+    callOne: [
+      "See shareable work",
+      "See shareable work",
+    ],
+    callTwo: [
+      "See Github instead",
+      "See Github instead",
     ]
   },
   projects: {
+    corporate: {
+      name: [
+        "Corporate Work",
+        "Corporate Work",
+      ],
+      description: [
+        "",
+        ""
+      ],
+    },
     life: {
       name: [
         "Movie Buddy (maybe)",
