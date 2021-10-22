@@ -6,6 +6,7 @@ import Head from './components/Head/Head'
 import ProjectCard from './components/ProjectCards/ProjectCard'
 import { CorporateProject, Projects } from './projects'
 import theme from './Theme/Main'
+import Masonry from '@mui/lab/Masonry'
 
 
 
@@ -27,12 +28,14 @@ function App(props: AppProps) {
         {/* <Container sx={{ py: 8 }} maxWidth="lg"> */}
         <Container id="scroll-target" sx={{ py: 8, backgroundColor: theme.black.dark, width: '100%', maxWidth: '100% !important', margin: 0 }} >
 
-          <ProjectCard isWide project={CorporateProject} />
-          <Grid container spacing={4}>
+          <div style={{ width: '80%', margin: 'auto' }}>
+            <ProjectCard isWide project={CorporateProject} />
+          </div>
+          <Masonry columns={3} spacing={3} style={{ width: '80%', margin: 'auto' }}>
             {
               Projects.map((project) => <ProjectCard project={project} />)
             }
-          </Grid>
+          </Masonry>
         </Container>
       </main>
 

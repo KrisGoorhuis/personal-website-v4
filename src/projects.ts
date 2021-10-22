@@ -1,4 +1,4 @@
-import beerBrowser from './assets/images/beer-browser-small.jpg'
+import beerBrowser from './assets/images/beer-browser.png'
 import beerBrowserSmall from './assets/images/beer-browser-small.jpg'
 import chatApp from './assets/images/chat-app.png'
 import chatAppSmall from './assets/images/chat-app-small.jpg'
@@ -19,7 +19,6 @@ import placeholder from './assets/images/photos/placeholder.jpg'
 
 import { translationPaths } from './translations/translations'
 import { Project } from './model'
-
 
 
 
