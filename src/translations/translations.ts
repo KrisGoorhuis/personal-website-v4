@@ -41,13 +41,24 @@ const recursivelyFindPathsInTranslations = <T extends Translations>(object: T, p
 
 
 const translations = {
+  toolbar: {
+    title: [
+      "Kris G",
+      "Kris G"
+    ],
+    construction: [
+      "Under active construction",
+      "Under active construction"
+    ]
+  },
   splash: {
     title: [
-
+      "Kris Goorhuis Title",
+      "Kris Goorhuis Title",
     ],
     subtitle: [
-      "Front End Web Developer | Hobbyist Native Developer | Freelance Writer | Estranged Coffee Lover",
-      "Front End Web Developer | Hobbyist Native Developer | Freelance Writer | Estranged Coffee Lover"
+      "Front End Web Developer | Hobbyist Native Developer | Freelance Writer",
+      "Front End Web Developer | Hobbyist Native Developer | Freelance Writer"
     ],
     description: [
       "When not developing, I'm coming up with descriptions for hobby and learning projects. Read a neat description of them and view a few below.",

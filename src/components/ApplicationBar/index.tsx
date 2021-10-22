@@ -1,4 +1,5 @@
 import React from "react"
+import { ColorLens, Construction } from '@mui/icons-material'
 import { AppBar, Box, IconButton, ModalUnstyled, styled, Toolbar, Typography } from "@mui/material"
 import { LocalizeContextProps, Translate, withLocalize } from "react-localize-redux"
 import LanguageMenu from "./LanguageMenu/LanguageMenu"
@@ -21,7 +22,7 @@ const ApplicationBar = (props: ApplicationBarProps) => {
   const handleLanguageMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget)
   }
-  
+
   const handleCloseMenu = (languageCode: SupportedLanguageCodes) => {
     setAnchorEl(null)
 
@@ -68,19 +69,29 @@ const ApplicationBar = (props: ApplicationBarProps) => {
 
   return (
     <div style={{ display: 'flex' }}>
-      <AppBar color="default" position="fixed"      >
+      <AppBar color="default" position="fixed" sx={{ bgcolor: 'rgba(255, 255, 255, .7)', backdropFilter: 'blur(3px)' }}>
         <Toolbar variant="dense" >
-          <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }} >
-            <img src={"TODO"} alt="Logo" />
-            <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-              KrisG
-            </Typography>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }} >
+            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+              {/* <img src={"TODO"} alt="Logo" /> */}
+              <ColorLens />
+              <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1, marginLeft: 2 }}>
+                <Translate id={translationPaths.toolbar.title} />
+              </Typography>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+              <Construction />
+              <Typography style={{ margin: 10 }}>
+                <Translate id={translationPaths.toolbar.construction} />
+              </Typography>
+            </div>
             <IconButton
               onClick={handleLanguageMenu}
             >
               <Language />
             </IconButton>
           </div>
+
           <LanguageMenu anchor={anchorEl} open={Boolean(anchorEl)} handleClose={handleCloseMenu} />
 
         </Toolbar>

@@ -30,6 +30,8 @@ ReactDOM.render(
       <LocalizeProvider store={store}>
         <ThemeProvider theme={theme}>
 
+        {/* <CssBaseline />  */}
+
           <App />
 
         </ThemeProvider>

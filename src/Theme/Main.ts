@@ -16,6 +16,11 @@ const theme = createTheme({
   red: {
     main: '#772f1a'
   },
+  black: {
+    light: '#222222',
+    dark: '#1f1f1f'
+  },
+
 })
 
 declare module '@mui/material/styles' {
@@ -35,6 +40,10 @@ declare module '@mui/material/styles' {
     red: {
       main: string;
     };
+    black: {
+      light: string;
+      dark: string;
+    }
   }
   // allow configuration using `createTheme`
   interface ThemeOptions {
@@ -53,6 +62,10 @@ declare module '@mui/material/styles' {
     red?: {
       main?: string;
     };
+    black?: {
+      light: string;
+      dark: string;
+    }
   }
 }
 

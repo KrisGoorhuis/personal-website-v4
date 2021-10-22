@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit"
-import _ from 'lodash'
 
 
 interface BookDataState {
@@ -14,12 +13,12 @@ const bookDataSlice = createSlice({
    name: "BoardSlice",
    initialState: initialBoardDataState,
    reducers: {
-
+      placeholder: () => {}
    },
 })
 
 export const {
-
+   placeholder
 } = bookDataSlice.actions
 
 export default bookDataSlice

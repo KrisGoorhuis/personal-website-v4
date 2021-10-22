@@ -1,6 +1,6 @@
 import { Grid, Card, CardContent, Typography, CardActions, Button, CardMedia } from "@mui/material"
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { Project } from "../../model";
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import { Project } from "../../model"
 
 
 
@@ -13,7 +13,7 @@ const ProjectCard = (props: ProjectCardProps) => {
    return (
       <Grid item key={JSON.stringify(props.project)} xs={12} sm={6} md={4}>
          <Card
-            sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+            sx={{ height: '300px', width: '250px', display: 'flex', flexDirection: 'column', margin: 'auto' }}
          >
             <LazyLoadImage
                alt={`Project preview for ${props.project.name}`}
@@ -27,7 +27,7 @@ const ProjectCard = (props: ProjectCardProps) => {
                         pt: '56.25%',
                      }}
                      image={props.project.imageSmall}
-                     alt="placeholder"
+                     alt="lazy load placeholder"
                   />
                )}
             />
