@@ -74,20 +74,30 @@ const translations = {
     ]
   },
   projects: {
+    buttons: {
+      viewLive: [
+        "Live",
+        "Live",
+      ],
+      viewCode: [
+        "Github",
+        "Github",
+      ]
+    },
     corporate: {
       name: [
         "Corporate Work",
         "Corporate Work",
       ],
       description: [
-        "",
-        ""
+        "A year and a half of professional automotive marketing tool construction. ",
+        "A year and a half of professional automotive marketing tool construction. "
       ],
     },
     life: {
       name: [
-        "Movie Buddy (maybe)",
-        "Movie Buddy (maybe)"
+        "Game of Life",
+        "Game of Life"
       ],
       description: [
         "John Conway's Game of Life. Click tiles to generate life, watch it age, and fiddle with the parameters of its existence. Complex state flow and an intentful eye on semantic HTML.",

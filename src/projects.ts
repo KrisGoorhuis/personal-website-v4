@@ -16,10 +16,10 @@ import movieBuddy from './assets/images/movie-buddy.png'
 import gameOfLife from './assets/images/game-of-life.png'
 import dashboard from './assets/images/dashboard.png'
 import placeholder from './assets/images/photos/placeholder.jpg'
+import corporate from './assets/images/code2.jpg'
 
 import { translationPaths } from './translations/translations'
 import { Project } from './model'
-
 
 
 export const Projects: Project[] = [
@@ -118,10 +118,10 @@ export const Projects: Project[] = [
 ]
 
 export const CorporateProject: Project = {
-   name: translationPaths.projects.life.name,
-   description: translationPaths.projects.life.description,
+   name: translationPaths.projects.corporate.name,
+   description: translationPaths.projects.corporate.description,
    imageSmall: placeholder,
-   imageLarge: gameOfLife,
+   imageLarge: corporate,
    githubLink: null,
    liveLink: null,
    technologies: ['React.js', 'Redux (Thunk, Toolkit)', 'Typescript', 'Material UI', 'REST APIs', ]

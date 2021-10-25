@@ -1,4 +1,4 @@
-import { Box, Button, Container, Grid, Stack } from '@mui/material'
+import { Box, Button, Container, Divider, Grid, Stack } from '@mui/material'
 import { LocalizeContextProps, withLocalize } from 'react-localize-redux'
 import ApplicationBar from './components/ApplicationBar'
 import Footer from './components/Footer/Footer'
@@ -7,8 +7,7 @@ import ProjectCard from './components/ProjectCards/ProjectCard'
 import { CorporateProject, Projects } from './projects'
 import theme from './Theme/Main'
 import Masonry from '@mui/lab/Masonry'
-
-
+import './App.css'
 
 interface AppProps extends LocalizeContextProps {
 
@@ -25,15 +24,21 @@ function App(props: AppProps) {
           <Head />
         </Box>
 
-        {/* <Container sx={{ py: 8 }} maxWidth="lg"> */}
-        <Container id="scroll-target" sx={{ py: 8, backgroundColor: theme.black.dark, width: '100%', maxWidth: '100% !important', margin: 0 }} >
-
-          <div style={{ width: '80%', margin: 'auto' }}>
-            <ProjectCard isWide project={CorporateProject} />
+        <Container sx={{
+          py: 8,
+          backgroundColor: theme.black.dark,
+          width: '100%',
+          maxWidth: '100% !important',
+          margin: 0,
+          paddingTop: '120px'
+        }} >
+          <div className="corporateProject" style={{ width: '80%', margin: 'auto' }}>
+            <ProjectCard isBig project={CorporateProject} />
           </div>
-          <Masonry columns={3} spacing={3} style={{ width: '80%', margin: 'auto' }}>
+          <div id="scroll-target" style={{ position: 'relative', top: -100 }} />
+          <Masonry className={"masonry"} columns={3} spacing={3} style={{ width: '80%', margin: 'auto' }}>
             {
-              Projects.map((project) => <ProjectCard project={project} />)
+              Projects.map((project) => <ProjectCard key={JSON.stringify(project)} project={project} />)
             }
           </Masonry>
         </Container>

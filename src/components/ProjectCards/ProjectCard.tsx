@@ -1,18 +1,31 @@
 import React from "react"
 import MasonryItem from "@mui/lab/MasonryItem"
-import { Card, CardContent, Typography, CardActions, Button, CardMedia, Collapse } from "@mui/material"
+import { Card, CardContent, Typography, CardActions, Button, CardMedia } from "@mui/material"
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Project } from "../../model"
-
+import { translationPaths } from "../../translations/translations"
+import { Translate } from "react-localize-redux"
 
 
 interface ProjectCardProps {
    project: Project
-   isWide?: boolean
+   isBig?: boolean
 }
 
 const ProjectCard = (props: ProjectCardProps) => {
    const [hovered, setHovered] = React.useState<boolean>(false)
+
+   const handleOpenLive = () => {
+      if (props.project.liveLink) {
+         window.open(props.project.liveLink, '_blank')?.focus()
+      }
+   }
+
+   const handleOpenGithub = () => {
+      if (props.project.githubLink) {
+         window.open(props.project.githubLink, '_blank')?.focus()
+      }
+   }
 
    return (
       <MasonryItem
@@ -21,13 +34,27 @@ const ProjectCard = (props: ProjectCardProps) => {
          onMouseLeave={() => setHovered(false)}
       >
          <Card
-            sx={{ display: 'flex', flexDirection: 'column', margin: 'auto', transition: '.3s' }}
+            sx={{
+               display: 'flex',
+               flexDirection: 'column',
+               margin: 'auto',
+               transition: '.3s',
+               position: 'relative',
+               maxHeight: 300,
+               marginBottom: '20px',
+            }}
          >
             <LazyLoadImage
                alt={`Project preview for ${props.project.name}`}
                effect="blur"
                src={props.project.imageLarge}
-               style={{ width: '100%' }}
+               style={{
+                  width: '100%',
+                  transform: hovered ? 'scale(1.1)' : 'scale(1.05)',
+                  transition: '.3s',
+                  marginBottom: -5,
+                  height: '100%'
+               }}
                placeholder={(
                   <CardMedia
                      component="img"
@@ -42,21 +69,46 @@ const ProjectCard = (props: ProjectCardProps) => {
                )}
             />
             <CardContent
-               sx={{ flexGrow: 1 }}
+               sx={{
+                  flexGrow: 1,
+                  position: 'absolute',
+                  opacity: hovered || props.isBig ? '1' : '0',
+                  transition: '.3s',
+                  backgroundColor: 'rgba(0, 0, 0, .5)',
+                  height: '100%',
+                  width: '100%',
+                  color: 'white',
+               }}
             >
-               <Collapse in={hovered}>
-                  <Typography gutterBottom variant="h5" component="h2">
-                     Heading
-                  </Typography>
-                  <Typography>
-                     This is a media card. You can use this section to describe the
-                     content.
-                  </Typography>
+               <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '90%' }}>
+                  <div>
+                     <Typography gutterBottom variant="h5" component="h2">
+                        <Translate id={props.project.name} />
+                     </Typography>
+                     <Typography style={{ width: '90%', fontSize: 12 }}>
+                        <Translate id={props.project.description} />
+                     </Typography>
+                  </div>
+
                   <CardActions>
-                     <Button size="small">View</Button>
-                     <Button size="small">Edit</Button>
+                     <Button
+                        variant="outlined"
+                        size="small"
+                        onClick={handleOpenLive}
+                     >
+                        <Translate id={translationPaths.projects.buttons.viewLive} />
+                     </Button>
+                     <Button
+                        variant="outlined"
+                        size="small"
+                        onClick={handleOpenGithub}
+                     >
+                        <Translate id={translationPaths.projects.buttons.viewCode} />
+                     </Button>
                   </CardActions>
-               </Collapse>
+
+               </div>
+
             </CardContent>
          </Card>
       </MasonryItem>

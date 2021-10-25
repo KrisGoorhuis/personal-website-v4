@@ -5,6 +5,7 @@ import theme from "../../Theme/Main"
 import { translationPaths } from "../../translations/translations"
 import self from '../../assets/images/photos/self.jpg'
 import placeholder from '../../assets/images/photos/placeholder.jpg'
+import '../../App.css'
 
 
 const Head = () => {
@@ -51,7 +52,7 @@ const Head = () => {
          </Box>
 
 
-         <Box sx={{ flexBasis: '20%', border: `5px solid ${theme.red.main}`, borderRadius: '50%', zIndex: 1 }}>
+         <Box className={"portrait"} sx={{ flexBasis: '20%', border: `5px solid ${theme.red.main}`, borderRadius: '50%', zIndex: 1 }}>
             <Box style={{ borderRadius: '50%', overflow: 'hidden', objectFit: 'contain', maxWidth: 400, borderColor: theme.gold.main, borderWidth: 5, zIndex: 2 }}>
                <LazyLoadImage
                   alt={`portrait`}

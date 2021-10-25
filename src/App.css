@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+
+@media (max-width: 1200px) {
+  .portrait {
+    display: none
+  }
+  .masonry {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .masonry {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
