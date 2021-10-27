@@ -91,27 +91,33 @@ const ProjectCard = (props: ProjectCardProps) => {
                   </div>
 
                   <CardActions>
-                     <Button
-                        variant="outlined"
-                        size="small"
-                        onClick={handleOpenLive}
-                     >
-                        <Translate id={translationPaths.projects.buttons.viewLive} />
-                     </Button>
-                     <Button
-                        variant="outlined"
-                        size="small"
-                        onClick={handleOpenGithub}
-                     >
-                        <Translate id={translationPaths.projects.buttons.viewCode} />
-                     </Button>
+                     {
+                        !props.isBig && props.project.liveLink &&
+                        <Button
+                           variant="outlined"
+                           size="small"
+                           onClick={handleOpenLive}
+                        >
+                           <Translate id={translationPaths.projects.buttons.viewLive} />
+                        </Button>
+                     }
+                     {
+                        !props.isBig && props.project.githubLink &&
+                        < Button
+                           variant="outlined"
+                           size="small"
+                           onClick={handleOpenGithub}
+                        >
+                           <Translate id={translationPaths.projects.buttons.viewCode} />
+                        </Button>
+                     }
                   </CardActions>
 
                </div>
 
             </CardContent>
          </Card>
-      </MasonryItem>
+      </MasonryItem >
    )
 }
 
