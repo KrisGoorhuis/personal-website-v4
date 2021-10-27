@@ -85,7 +85,7 @@ const ProjectCard = (props: ProjectCardProps) => {
                      <Typography gutterBottom variant="h5" component="h2">
                         <Translate id={props.project.name} />
                      </Typography>
-                     <Typography style={{ width: '90%', fontSize: 12, minWidth: '300px', textOverflow: 'ellipsis' }}>
+                     <Typography className={"projectFont"} style={{ width: '90%', fontSize: 12, minWidth: '300px', textOverflow: 'ellipsis' }}>
                         <Translate id={props.project.description} />
                      </Typography>
                   </div>
