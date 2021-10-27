@@ -90,8 +90,8 @@ const translations = {
         "Corporate Work",
       ],
       description: [
-        "A year and a half of professional automotive marketing tool construction. ",
-        "A year and a half of professional automotive marketing tool construction. "
+        "A year and a half of professional automotive marketing tool construction. Cleared out available bugs/issues tickets, migrated enormous feature code to modern style, tech, and standards, spearheaded a greenfield project while documenting new technology implementations and implications, coordinated with another developer on the architecting and followthrough of the next big thing.",
+        "A year and a half of professional automotive marketing tool construction. Cleared out available bugs/issues tickets, migrated enormous feature code to modern style, tech, and standards, spearheaded a greenfield project while documenting new technology implementations and implications, coordinated with another developer on the architecting and followthrough of the next big thing."
       ],
     },
     life: {
@@ -156,8 +156,8 @@ const translations = {
     },
     viz: {
       name: [
-        "Temperature Data Visualization",
-        "Temperature Data Visualization"
+        "Temperature Visualization",
+        "Temperature Visualization"
       ],
       description: [
         "Another colossal JSON object pulled apart and mapped. This time presented with the D3 visualization library.",

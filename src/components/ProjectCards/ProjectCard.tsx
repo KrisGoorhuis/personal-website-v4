@@ -80,12 +80,12 @@ const ProjectCard = (props: ProjectCardProps) => {
                   color: 'white',
                }}
             >
-               <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '90%' }}>
+               <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '90%', flexShrink: 1 }}>
                   <div>
                      <Typography gutterBottom variant="h5" component="h2">
                         <Translate id={props.project.name} />
                      </Typography>
-                     <Typography style={{ width: '90%', fontSize: 12 }}>
+                     <Typography style={{ width: '90%', fontSize: 12, minWidth: '300px', textOverflow: 'ellipsis' }}>
                         <Translate id={props.project.description} />
                      </Typography>
                   </div>
