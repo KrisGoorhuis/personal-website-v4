@@ -8,8 +8,8 @@ import { Provider } from 'react-redux'
 import theme from './Theme/Main'
 import store from './redux'
 import { renderToStaticMarkup } from 'react-dom/server'
-import { initialize, LocalizeProvider } from 'react-localize-redux'
 import translations from './translations/translations'
+import { initialize } from 'react-localize-redux'
 
 
 const thing = initialize({
