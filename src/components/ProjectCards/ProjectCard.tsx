@@ -80,31 +80,37 @@ const ProjectCard = (props: ProjectCardProps) => {
                   color: 'white',
                }}
             >
-               <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '90%' }}>
+               <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '90%', flexShrink: 1 }}>
                   <div>
                      <Typography gutterBottom variant="h5" component="h2">
                         <Translate id={props.project.name} />
                      </Typography>
-                     <Typography style={{ width: '90%', fontSize: 12 }}>
+                     <Typography className={"projectFont"} style={{ width: '90%', fontSize: 12, minWidth: '300px', textOverflow: 'ellipsis' }}>
                         <Translate id={props.project.description} />
                      </Typography>
                   </div>
 
                   <CardActions>
-                     <Button
-                        variant="outlined"
-                        size="small"
-                        onClick={handleOpenLive}
-                     >
-                        <Translate id={translationPaths.projects.buttons.viewLive} />
-                     </Button>
-                     <Button
-                        variant="outlined"
-                        size="small"
-                        onClick={handleOpenGithub}
-                     >
-                        <Translate id={translationPaths.projects.buttons.viewCode} />
-                     </Button>
+                  {
+                        !props.isBig && props.project.liveLink &&
+                        <Button
+                           variant="outlined"
+                           size="small"
+                           onClick={handleOpenLive}
+                        >
+                           <Translate id={translationPaths.projects.buttons.viewLive} />
+                        </Button>
+                     }
+                     {
+                        !props.isBig && props.project.githubLink &&
+                        < Button
+                           variant="outlined"
+                           size="small"
+                           onClick={handleOpenGithub}
+                        >
+                           <Translate id={translationPaths.projects.buttons.viewCode} />
+                        </Button>
+                     }
                   </CardActions>
 
                </div>

@@ -61,8 +61,8 @@ const translations = {
       "Front End Web Developer | Hobbyist Native Developer | Freelance Writer"
     ],
     description: [
-      "When not developing, I'm coming up with descriptions for hobby and learning projects. Read a neat description of them and view a few below.",
-      "When not developing, I'm coming up with descriptions for hobby and learning projects. Read a neat description of them and view a few below."
+      "Self-taught developer specialized in React, Redux, and Typescript, actively exploring React Native, with ambitions of becoming full-stack. Highly practiced in quitting caffeine.",
+      "Self-taught developer specialized in React, Redux, and Typescript, actively exploring React Native, with ambitions of becoming full-stack. Highly practiced in quitting caffeine."
     ],
     callOne: [
       "See shareable work",
@@ -90,8 +90,8 @@ const translations = {
         "Corporate Work",
       ],
       description: [
-        "A year and a half of professional automotive marketing tool construction. ",
-        "A year and a half of professional automotive marketing tool construction. "
+        "A year and a half of professional automotive marketing tool construction. Cleared out available bugs/issues tickets, migrated enormous feature code to modern style, tech, and standards, spearheaded a greenfield project while documenting new technology implementations and implications, coordinated with another developer on the architecting and followthrough of the next big thing.",
+        "A year and a half of professional automotive marketing tool construction. Cleared out available bugs/issues tickets, migrated enormous feature code to modern style, tech, and standards, spearheaded a greenfield project while documenting new technology implementations and implications, coordinated with another developer on the architecting and followthrough of the next big thing."
       ],
     },
     life: {
@@ -146,8 +146,8 @@ const translations = {
     },
     chat: {
       name: [
-        "Chat App (defunct)",
-        "Chat App (defunct)"
+        "Chat App",
+        "Chat App"
       ],
       description: [
         "My first foray into React. It integrates a MongoDB database of my own make, storing chat history and allowing for private conversations, notifications, and login-free unique IDs.",
@@ -156,8 +156,8 @@ const translations = {
     },
     viz: {
       name: [
-        "Temperature Data Visualization",
-        "Temperature Data Visualization"
+        "Temperature Visualization",
+        "Temperature Visualization"
       ],
       description: [
         "Another colossal JSON object pulled apart and mapped. This time presented with the D3 visualization library.",
