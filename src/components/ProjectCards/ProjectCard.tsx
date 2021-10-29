@@ -5,6 +5,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Project } from "../../model"
 import { translationPaths } from "../../translations/translations"
 import { Translate } from "react-localize-redux"
+import theme from "../../Theme/Main"
 
 
 interface ProjectCardProps {
@@ -74,7 +75,7 @@ const ProjectCard = (props: ProjectCardProps) => {
                   position: 'absolute',
                   opacity: hovered ? '1' : '0',
                   transition: '.3s',
-                  backgroundColor: 'rgba(0, 0, 0, .5)',
+                  backgroundColor: 'rgba(0, 0, 0, .7)',
                   height: '100%',
                   width: '100%',
                   color: 'white',
@@ -82,15 +83,15 @@ const ProjectCard = (props: ProjectCardProps) => {
             >
                <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '90%', flexShrink: 1 }}>
                   <div>
-                     <Typography gutterBottom variant="h5" component="h2">
+                     <Typography gutterBottom variant={props.isBig ? "h4" : "h5"} component="h2" style={{color: theme.gold.main}}>
                         <Translate id={props.project.name} />
                      </Typography>
-                     <Typography className={"projectFont"} style={{ width: '90%', fontSize: 12, minWidth: '300px', textOverflow: 'ellipsis' }}>
+                     <Typography className={"projectFont"} style={{ width: '90%', fontSize: props.isBig ? 16 : 12, minWidth: '300px', textOverflow: 'ellipsis' }}>
                         <Translate id={props.project.description} />
                      </Typography>
                      {
                         props.project.descriptionTwo &&
-                        <Typography className={"projectFont"} style={{ width: '90%', fontSize: 12, minWidth: '300px', textOverflow: 'ellipsis' }}>
+                        <Typography className={"projectFont"} style={{ width: '90%', fontSize: props.isBig ? 16 : 12, minWidth: '300px', textOverflow: 'ellipsis', marginTop: 20 }}>
                            <Translate id={props.project.descriptionTwo} />
                         </Typography>
                      }
