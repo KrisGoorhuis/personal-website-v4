@@ -1,12 +1,15 @@
 import React from "react"
-import { ColorLens, Construction } from '@mui/icons-material'
+import { Construction, Description } from '@mui/icons-material'
 import { AppBar, Box, IconButton, ModalUnstyled, styled, Toolbar, Typography } from "@mui/material"
 import { LocalizeContextProps, Translate, withLocalize } from "react-localize-redux"
 import LanguageMenu from "./LanguageMenu/LanguageMenu"
 import Language from '@mui/icons-material/Language'
+import Close from '@mui/icons-material/Close'
 import { SupportedLanguageCodes } from "../../model"
 import { translationPaths } from "../../translations/translations"
 import transparentLogo from '../../assets/images/transparentLogoDark.png'
+import resume from '../../assets/resume.pdf'
+
 
 interface ApplicationBarProps extends LocalizeContextProps {
   children: any
@@ -15,7 +18,6 @@ interface ApplicationBarProps extends LocalizeContextProps {
 const ApplicationBar = (props: ApplicationBarProps) => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
   const [modalOpen, setModalOpen] = React.useState(false);
-
 
   const handleClose = () => setModalOpen(false);
 
@@ -73,7 +75,7 @@ const ApplicationBar = (props: ApplicationBarProps) => {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }} >
 
             <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', height: 45 }}>
-              <img style={{height: '100%', transform: 'scale(6)', marginLeft: 10}} src={transparentLogo} alt="Logo" />
+              <img style={{ height: '100%', transform: 'scale(6)', marginLeft: 10 }} src={transparentLogo} alt="Logo" />
               {/* <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1, marginLeft: 2 }}>
                 <Translate id={translationPaths.toolbar.title} />
               </Typography> */}
@@ -87,11 +89,26 @@ const ApplicationBar = (props: ApplicationBarProps) => {
               <Construction />
             </div>
 
-            <IconButton
-              onClick={handleLanguageMenu}
-            >
-              <Language />
-            </IconButton>
+            <div>
+              <a download style={{textDecoration: 'none'}} href={resume}>
+                <IconButton style={{ marginRight: 10 }}>
+                  <Description />
+                  <Typography>
+                    cv
+                  </Typography>
+                </IconButton>
+              </a>
+
+              <IconButton
+                onClick={handleLanguageMenu}
+              >
+                <Language />
+                <Typography>
+                  {props.activeLanguage && props.activeLanguage.code}
+                </Typography>
+              </IconButton>
+            </div>
+
 
           </div>
 
@@ -113,6 +130,9 @@ const ApplicationBar = (props: ApplicationBarProps) => {
         <Box sx={style}>
           <h2 id="unstyled-modal-title"><Translate id={translationPaths.language.frenchModalTitle} /></h2>
           <p id="unstyled-modal-description"><Translate id={translationPaths.language.frenchModalBody} /></p>
+          <IconButton style={{ position: 'absolute', right: 0 }}>
+            <Close />
+          </IconButton>
         </Box>
       </StyledModal>
 

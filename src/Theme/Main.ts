@@ -1,4 +1,4 @@
-import { createTheme, Palette, PaletteColor, PaletteColorOptions, PaletteOptions } from "@mui/material";
+import { createTheme, Palette } from "@mui/material"
 
 const theme = createTheme({
   green: {
@@ -21,7 +21,6 @@ const theme = createTheme({
     dark: '#1f1f1f'
   },
   palette: {
-
     primary: {
       light: '#f58549',
       main: '#f58549',

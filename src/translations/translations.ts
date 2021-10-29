@@ -84,6 +84,16 @@ const translations = {
         "Github",
       ]
     },
+    native: {
+      name: [
+        "React Native",
+        "React Native",
+      ],
+      description: [
+        "Exploration of the piece of tech that has excited me more than anything since the beginning. A port of the Game of Life and a Redux-y book API search and archive thing.",
+        "Un an et demi de construction d'outils professionnels de marketing automobile. Suppression des tickets de bogues/problèmes disponibles, migration d'un énorme code de fonctionnalités vers un style, une technologie et des normes modernes, a dirigé un projet entièrement nouveau tout en documentant les nouvelles implémentations et implications technologiques, en coordination avec un autre développeur sur l'architecture et le suivi de la prochaine grande chose."
+      ],
+    },
     corporate: {
       name: [
         "Corporate Work",
@@ -95,7 +105,7 @@ const translations = {
       ],
       descriptionTwo: [
         "No links to things that aren't mine to share here, but a card was deserved.",
-        "Pas de liens vers des choses qui ne sont pas les miennes à partager ici, mais une carte était méritée.",
+        "Pas de liens vers des choses qui ne sont pas les miennes à partager ici, mais une carte est méritée.",
       ]
     },
     life: {

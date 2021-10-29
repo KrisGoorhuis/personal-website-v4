@@ -1,4 +1,4 @@
-import { Box, Button, Container, Divider, Grid, Stack } from '@mui/material'
+import { Box, Container, Typography } from '@mui/material'
 import { LocalizeContextProps, withLocalize } from 'react-localize-redux'
 import ApplicationBar from './components/ApplicationBar'
 import Footer from './components/Footer/Footer'

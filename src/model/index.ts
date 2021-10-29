@@ -11,5 +11,5 @@ export interface Project {
    imageLarge: string
    githubLink: string | null
    liveLink: string | null
-   technologies: string[]
+   technologies?: string[]
 }
