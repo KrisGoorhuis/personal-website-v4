@@ -15,7 +15,7 @@ import minesweeperSmall from './assets/images/minesweeper-small.jpg'
 import movieBuddy from './assets/images/movie-buddy.png'
 import gameOfLife from './assets/images/game-of-life.png'
 import dashboard from './assets/images/dashboard.png'
-import placeholder from './assets/images/photos/placeholder.jpg'
+import placeholder from './assets/images/placeholder.jpg'
 import corporate from './assets/images/code2.jpg'
 import native from './assets/images/native.jpg'
 
