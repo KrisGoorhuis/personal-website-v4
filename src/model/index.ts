@@ -6,6 +6,7 @@ export enum SupportedLanguageCodes {
 export interface Project {
    name: string
    description: string
+   descriptionTwo?:string
    imageSmall: string
    imageLarge: string
    githubLink: string | null

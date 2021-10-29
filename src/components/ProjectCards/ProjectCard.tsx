@@ -72,7 +72,7 @@ const ProjectCard = (props: ProjectCardProps) => {
                sx={{
                   flexGrow: 1,
                   position: 'absolute',
-                  opacity: hovered || props.isBig ? '1' : '0',
+                  opacity: hovered ? '1' : '0',
                   transition: '.3s',
                   backgroundColor: 'rgba(0, 0, 0, .5)',
                   height: '100%',
@@ -88,10 +88,16 @@ const ProjectCard = (props: ProjectCardProps) => {
                      <Typography className={"projectFont"} style={{ width: '90%', fontSize: 12, minWidth: '300px', textOverflow: 'ellipsis' }}>
                         <Translate id={props.project.description} />
                      </Typography>
+                     {
+                        props.project.descriptionTwo &&
+                        <Typography className={"projectFont"} style={{ width: '90%', fontSize: 12, minWidth: '300px', textOverflow: 'ellipsis' }}>
+                           <Translate id={props.project.descriptionTwo} />
+                        </Typography>
+                     }
                   </div>
 
                   <CardActions>
-                  {
+                     {
                         !props.isBig && props.project.liveLink &&
                         <Button
                            variant="outlined"

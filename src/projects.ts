@@ -119,7 +119,8 @@ export const Projects: Project[] = [
 
 export const CorporateProject: Project = {
    name: translationPaths.projects.corporate.name,
-   description: translationPaths.projects.corporate.description,
+   description: translationPaths.projects.corporate.descriptionOne,
+   descriptionTwo: translationPaths.projects.corporate.descriptionTwo,
    imageSmall: placeholder,
    imageLarge: corporate,
    githubLink: null,

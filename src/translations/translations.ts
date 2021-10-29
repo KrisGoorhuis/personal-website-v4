@@ -89,10 +89,14 @@ const translations = {
         "Corporate Work",
         "Corporate Work",
       ],
-      description: [
+      descriptionOne: [
         "A year and a half of professional automotive marketing tool construction. Cleared out available bugs/issues tickets, migrated enormous feature code to modern style, tech, and standards, spearheaded a greenfield project while documenting new technology implementations and implications, coordinated with another developer on the architecting and followthrough of the next big thing.",
         "A year and a half of professional automotive marketing tool construction. Cleared out available bugs/issues tickets, migrated enormous feature code to modern style, tech, and standards, spearheaded a greenfield project while documenting new technology implementations and implications, coordinated with another developer on the architecting and followthrough of the next big thing."
       ],
+      descriptionTwo: [
+        "No links to things that aren't mine to share here, but a card was deserved.",
+        "No links to things that aren't mine to share here, but a card was deserved.",
+      ]
     },
     life: {
       name: [
@@ -201,8 +205,8 @@ const translations = {
       "Note: I'm not fluent in French"
     ],
     frenchModalBody: [
-      "These translations have been run through Google. I accept no responsibility for oddity.",
-      "These translations have been run through Google. I accept no responsibility for oddity."
+      "These translations have been run through Google.",
+      "These translations have been run through Google."
     ]
   }
 }
