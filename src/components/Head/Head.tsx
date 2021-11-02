@@ -3,7 +3,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component"
 import { Translate } from "react-localize-redux"
 import theme from "../../Theme/Main"
 import { translationPaths } from "../../translations/translations"
-import self from '../../assets/images/photos/self.jpg'
+import self from '../../assets/images/self.jpg'
 import placeholder from '../../assets/images/photos/placeholder.jpg'
 import '../../App.css'
 
