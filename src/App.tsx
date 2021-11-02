@@ -37,11 +37,11 @@ function App(props: AppProps) {
             <ProjectCard isBig project={CorporateProject} />
           </div>
           <div id="scroll-target" style={{ position: 'relative', top: -100 }} />
-          {/* <Masonry className={"masonry"} columns={3} spacing={3} style={{ width: '80%', margin: 'auto' }}>
+          <Masonry className={"masonry"} columns={3} spacing={3} style={{ width: '80%', margin: 'auto' }}>
             {
               Projects.map((project) => <ProjectCard key={JSON.stringify(project)} project={project} />)
             }
-          </Masonry> */}
+          </Masonry>
         </Container>
       </main>
 
