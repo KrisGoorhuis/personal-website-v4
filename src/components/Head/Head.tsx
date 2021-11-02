@@ -4,7 +4,7 @@ import { Translate } from "react-localize-redux"
 import theme from "../../Theme/Main"
 import { translationPaths } from "../../translations/translations"
 import self from '../../assets/images/self.jpg'
-import placeholder from '../../assets/images/photos/placeholder.jpg'
+import placeholder from '../../assets/images/placeholder.jpg'
 import '../../App.css'
 
 
