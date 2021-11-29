@@ -45,7 +45,7 @@ function App(props: AppProps) {
         </Container>
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
 
     </ApplicationBar>
   )
