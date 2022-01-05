@@ -32,7 +32,7 @@ function App(props: AppProps) {
           maxWidth: '100% !important',
           margin: 0,
           paddingTop: '120px'
-        }} >
+        }}>
           <div className="corporateProject" style={{ width: '80%', margin: 'auto' }}>
             <ProjectCard isBig project={CorporateProject} />
           </div>

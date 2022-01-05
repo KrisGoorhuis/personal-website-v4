@@ -1,16 +1,18 @@
 import React from "react"
 import MasonryItem from "@mui/lab/MasonryItem"
-import { Card, CardContent, Typography, CardActions, Button, CardMedia } from "@mui/material"
-import { LazyLoadImage } from 'react-lazy-load-image-component'
+import { Card, CardContent, Typography, CardActions, Button } from "@mui/material"
+import { LazyLoadImage, ScrollPosition, trackWindowScroll } from 'react-lazy-load-image-component'
 import { Project } from "../../model"
 import { translationPaths } from "../../translations/translations"
 import { Translate } from "react-localize-redux"
 import theme from "../../Theme/Main"
+import placeholder from '../../assets/images/placeholder.jpg'
 
 
 interface ProjectCardProps {
    project: Project
    isBig?: boolean
+   scrollPosition: ScrollPosition
 }
 
 const ProjectCard = (props: ProjectCardProps) => {
@@ -43,31 +45,22 @@ const ProjectCard = (props: ProjectCardProps) => {
                position: 'relative',
                maxHeight: 300,
                marginBottom: '20px',
+               backgroundColor: 'rgba(0,0,0,0)' // Removes some visible light edges left by the MuiPaper root of <Card>
             }}
          >
             <LazyLoadImage
                alt={`Project preview for ${props.project.name}`}
-               effect="blur"
+               effect="opacity"
                src={props.project.imageLarge}
                style={{
-                  width: '100%',
                   transform: hovered ? 'scale(1.1)' : 'scale(1.05)',
                   transition: '.3s',
                   marginBottom: -5,
-                  height: '100%'
+                  minHeight: "200px"
                }}
-               placeholder={(
-                  <CardMedia
-                     component="img"
-                     sx={{
-                        // 16:9
-                        width: '100%',
-                        pt: '56.25%',
-                     }}
-                     image={props.project.imageSmall}
-                     alt="lazy load placeholder"
-                  />
-               )}
+               height='100%'
+               width='100%'
+               placeholderSrc={placeholder}
             />
             <CardContent
                sx={{
@@ -128,4 +121,4 @@ const ProjectCard = (props: ProjectCardProps) => {
    )
 }
 
-export default ProjectCard
+export default trackWindowScroll(ProjectCard)

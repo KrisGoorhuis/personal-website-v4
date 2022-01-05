@@ -1,4 +1,4 @@
-import { Box, Typography, CardMedia, Button, Stack } from "@mui/material"
+import { Box, Typography, Button, Stack } from "@mui/material"
 import { LazyLoadImage } from "react-lazy-load-image-component"
 import { Translate } from "react-localize-redux"
 import theme from "../../Theme/Main"
@@ -18,6 +18,7 @@ const Head = () => {
    const handleCallTwo = () => {
       window.open("https://github.com/KrisGoorhuis", '_blank')?.focus()
    }
+
 
    return (
       <Box sx={{ display: 'flex', justifyContent: 'space-around', margin: 'auto' }} maxWidth="lg">
@@ -58,18 +59,10 @@ const Head = () => {
                   alt={`portrait`}
                   effect="blur"
                   src={self}
+                  width='240px'
+                  height='320px'
                   style={{ maxWidth: '100%', transform: 'scale(1.3)', top: 20, position: 'relative', left: -15 }}
-                  placeholder={(
-                     <CardMedia
-                        component="img"
-                        sx={{
-                           // 16:9
-                           pt: '56.25%',
-                        }}
-                        image={placeholder}
-                        alt="lazy load placeholder"
-                     />
-                  )}
+                  placeholderSrc={placeholder}
                />
             </Box>
 
