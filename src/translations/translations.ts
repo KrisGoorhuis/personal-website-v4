@@ -53,16 +53,16 @@ const translations = {
   },
   splash: {
     title: [
-      "Kris Goorhuis Title",
-      "Kris Goorhuis Title",
+      "Kris Goorhuis",
+      "Kris Goorhuis",
     ],
     subtitle: [
-      "Front End Web Developer | Hobbyist Native Developer | Freelance Writer",
-      "Développeur Web Front End | Développeur natif amateur | Rédacteur indépendant"
+      "Front End Web Developer | Hobbyist Native, C#, and Python Developer | Freelance Writer",
+      "Développeur Web Front End | Développeur amateur Natif, C# et Python | Rédacteur indépendant"
     ],
     description: [
-      "Self-taught developer specialized in React, Redux, and Typescript, actively exploring React Native, with ambitions of becoming full-stack. Highly practiced in quitting caffeine.",
-      "Développeur autodidacte spécialisé dans React, Redux et Typescript, explorant activement React Native, avec l'ambition de devenir full-stack. Fortement pratiqué dans l'arrêt de la caféine."
+      "Self-taught developer specialized in React, Redux, and Typescript, actively exploring React Native and modern data querying, with ambitions of becoming full-stack. Highly practiced in quitting caffeine.",
+      "Développeur autodidacte spécialisé dans React, Redux et Typescript, explorant activement React Native et l'interrogation de données moderne, avec l'ambition de devenir full-stack. Très pratiqué dans l'arrêt de la caféine."
     ],
     callOne: [
       "See shareable work",
@@ -90,8 +90,8 @@ const translations = {
         "React Native",
       ],
       description: [
-        "Exploration of the piece of tech that has excited me more than anything since the beginning. A port of the Game of Life and a Redux-y book API search and archive thing.",
-        "Un an et demi de construction d'outils professionnels de marketing automobile. Suppression des tickets de bogues/problèmes disponibles, migration d'un énorme code de fonctionnalités vers un style, une technologie et des normes modernes, a dirigé un projet entièrement nouveau tout en documentant les nouvelles implémentations et implications technologiques, en coordination avec un autre développeur sur l'architecture et le suivi de la prochaine grande chose."
+        "Exploration of the piece of tech that has excited me more than anything since the beginning. A port of the Game of Life and a Redux-y book API search and archive app.",
+        "Exploration du morceau de technologie qui m'a excité plus que tout depuis le début. Un port du jeu de la vie et une application de recherche et d'archivage de l'API de livre Redux-y."
       ],
     },
     corporate: {
@@ -100,12 +100,12 @@ const translations = {
         "Travail en entreprise",
       ],
       descriptionOne: [
-        "A year and a half of professional automotive marketing tool construction. Cleared out available bugs/issues tickets, migrated enormous feature code to modern style, tech, and standards, spearheaded a greenfield project while documenting new technology implementations and implications, coordinated with another developer on the architecting and followthrough of the next big thing.",
-        "Un an et demi de construction d'outils professionnels de marketing automobile. Suppression des tickets de bogues/problèmes disponibles, migration d'un énorme code de fonctionnalités vers un style, une technologie et des normes modernes, a dirigé un projet entièrement nouveau tout en documentant les nouvelles implémentations et implications technologiques, en coordination avec un autre développeur sur l'architecture et le suivi de la prochaine grande chose."
+        "A year and a half of professional automotive marketing tool construction. Cleared out available bugs/issues tickets, migrated enormous feature code to modern style, tech, and standards, spearheaded a greenfield project while documenting new technology implementations and implications, coordinated with another developer on the architecting and followthrough of the Next Big Thing.",
+        "Un an et demi de construction d'outils professionnels de marketing automobile. Suppression des tickets de bogues/problèmes disponibles, migration d'un énorme code de fonctionnalités vers un style, une technologie et des normes modernes, a dirigé un projet entièrement nouveau tout en documentant les nouvelles implémentations et implications technologiques, en coordination avec un autre développeur sur l'architecture et le suivi de la Prochaine Grande Chose."
       ],
       descriptionTwo: [
-        "No links to things that aren't mine to share here, but a card was deserved.",
-        "Pas de liens vers des choses qui ne sont pas les miennes à partager ici, mais une carte est méritée.",
+        "No links to things that aren't mine to share here.",
+        "Aucun lien vers des choses qui ne m'appartiennent pas à partager ici.",
       ]
     },
     life: {
@@ -134,8 +134,8 @@ const translations = {
         "Dragueur de mines"
       ],
       description: [
-        "Full replication in C# and Windows Presentation Foundation. Features customizable area and mine density, flagging, and smiley faces.",
-        "Réplication complète en C# et Windows Presentation Foundation. Comprend une zone et une densité de mines personnalisables, un signalement et des visages souriants."
+        "Full replication in C# and Windows Presentation Foundation. Features customizable area and mine density, flagging, and custom ASCII art.",
+        "Réplication complète en C# et Windows Presentation Foundation. Comprend une zone personnalisable et une densité de mines, un marquage et un art ASCII personnalisé."
       ],
     },
     beer: {
@@ -174,8 +174,8 @@ const translations = {
         "Visualisation de la température"
       ],
       description: [
-        "Another colossal JSON object pulled apart and mapped. This time presented with the D3 visualization library.",
-        "Un autre objet JSON colossal a été séparé et mappé. Cette fois présenté avec la bibliothèque de visualisation D3."
+        "Another colossal JSON object pulled apart and mapped, this time presented with the D3 visualization library.",
+        "Un autre objet JSON colossal séparé et cartographié, cette fois présenté avec la bibliothèque de visualisation D3."
       ],
     },
     snake: {
@@ -184,8 +184,8 @@ const translations = {
         "Jeu de Serpent"
       ],
       description: [
-        "An early javascript passion project - a recreation of the classic snake game. Includes selectable stages, score counter, and, most importantly, your character is patterned after Noodle the coral snake.",
-        "Un premier projet de passion javascript - une recréation du jeu de serpent classique. Comprend des étapes sélectionnables, un compteur de score et, plus important encore, votre personnage est inspiré de Noodle le serpent corail."
+        "An early javascript passion project - a recreation of the classic snake game. Includes selectable stages, score counter, and, most importantly, your character is patterned after Noodle the coral snake from Snake Pass.",
+        "Un premier projet de passion javascript - une recréation du jeu de serpent classique. Comprend des étapes sélectionnables, un compteur de score et, plus important encore, votre personnage est calqué sur Noodle le serpent corail de Snake Pass."
       ],
     },
     eddy: {
@@ -194,7 +194,7 @@ const translations = {
         "Copie de l'ancien site de The Eddy"
       ],
       description: [
-        "Using someone else's work as more or less a mock, this is a recreation using original CSS and assets",
+        "Using someone else's designs as a mock, this is a recreation using original CSS and assets",
         "Utilisant le travail de quelqu'un d'autre comme plus ou moins une simulation, il s'agit d'une récréation utilisant des CSS et des ressources d'origine"
       ],
     },
@@ -211,8 +211,8 @@ const translations = {
   },
   language: {
     frenchModalTitle: [
-      "Note: I'm not fluent in French", // Both are English by intent 
-      "Note: I'm not fluent in French"
+      "Note: I'm not yet fluent in French", // Both are English by intent 
+      "Note: I'm not yet fluent in French"
     ],
     frenchModalBody: [
       "These translations have been run through Google.",
