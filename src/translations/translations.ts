@@ -86,12 +86,12 @@ const translations = {
     },
     native: {
       name: [
-        "React Native",
-        "React Native",
+        "React Native - SpaceX Browser etc.",
+        "React Native - SpaceX Browser etc.",
       ],
       description: [
-        "Exploration of the piece of tech that has excited me more than anything since the beginning. A port of the Game of Life and a Redux-y book API search and archive app.",
-        "Exploration du morceau de technologie qui m'a excité plus que tout depuis le début. Un port du jeu de la vie et une application de recherche et d'archivage de l'API de livre Redux-y."
+        "Exploratory React Native projects, from simple ports of existing desktop code to fully stack-navigated, platform-exploiting, API heavy SpaceXData browsers. Also makes use of modern querying technology (React Query).",
+        "Projets exploratoires React Native, des simples ports de code de bureau existant aux navigateurs SpaceXData à navigation complète, exploitant la plate-forme et lourds d'API. La technologie d'interrogation moderne a été utilisée pour traiter les données."
       ],
     },
     corporate: {
@@ -164,8 +164,8 @@ const translations = {
         "Application de chat"
       ],
       description: [
-        "My first foray into React. It integrates a MongoDB database of my own make, storing chat history and allowing for private conversations, notifications, and login-free unique IDs.",
-        "Ma première incursion dans React. Il intègre une base de données MongoDB de ma propre marque, stockant l'historique des discussions et permettant des conversations privées, des notifications et des identifiants uniques sans connexion."
+        "My first foray into React. It integrates a bespoke MongoDB database, stores chat history, and allows for private conversations, notifications, and login-free unique IDs.",
+        "Ma première incursion dans React. Il intègre une base de données MongoDB sur mesure, stocke l'historique des discussions et permet des conversations privées, des notifications et des identifiants uniques sans connexion."
       ],
     },
     viz: {

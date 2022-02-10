@@ -7,7 +7,7 @@ export interface Project {
    name: string
    description: string
    descriptionTwo?:string
-   imageSmall: string
+   imageSmall?: string
    imageLarge: string
    githubLink: string | null
    liveLink: string | null
