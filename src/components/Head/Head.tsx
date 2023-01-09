@@ -3,7 +3,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component"
 import { Translate } from "react-localize-redux"
 import theme from "../../Theme/Main"
 import { translationPaths } from "../../translations/translations"
-import self from '../../assets/images/self.jpg'
+import self from '../../assets/images/self.jpeg'
 import placeholder from '../../assets/images/placeholder.jpg'
 import '../../App.css'
 
@@ -61,7 +61,7 @@ const Head = () => {
                   src={self}
                   width='240px'
                   height='320px'
-                  style={{ maxWidth: '100%', transform: 'scale(1.3)', top: 20, position: 'relative', left: -15 }}
+                  style={{ maxWidth: '100%', transform: 'scale(1.2)', top: 10, position: 'relative', left: 10 }}
                   placeholderSrc={placeholder}
                />
             </Box>

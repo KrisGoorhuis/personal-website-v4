@@ -57,12 +57,12 @@ const translations = {
       "Kris Goorhuis",
     ],
     subtitle: [
-      "Front End Web Developer | Hobbyist Native, C#, and Python Developer | Freelance Writer",
-      "Développeur Web Front End | Développeur amateur Natif, C# et Python | Rédacteur indépendant"
+      "Developer | Hobbyist Native, C#, and Python Developer | Freelance Writer",
+      "Développeur Web | Développeur amateur Natif, C# et Python | Rédacteur indépendant"
     ],
     description: [
-      "Self-taught developer specialized in React, Redux, and Typescript, actively exploring React Native and modern data querying, with ambitions of becoming full-stack. Highly practiced in quitting caffeine.",
-      "Développeur autodidacte spécialisé dans React, Redux et Typescript, explorant activement React Native et l'interrogation de données moderne, avec l'ambition de devenir full-stack. Très pratiqué dans l'arrêt de la caféine."
+      "Self-taught developer specialized in React and GraphQL, learning Nest. Highly practiced in quitting caffeine.",
+      "Développeur autodidacte spécialisé en React et GraphQL, learning Nest. Très pratiqué pour arrêter la caféine."
     ],
     callOne: [
       "See shareable work",
