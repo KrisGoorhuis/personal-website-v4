@@ -1,12 +1,9 @@
-import React from "react"
 import MasonryItem from "@mui/lab/MasonryItem"
-import { Card, CardContent, Typography, CardActions, Button } from "@mui/material"
+import { Card, CardContent } from "@mui/material"
+import React from "react"
 import { LazyLoadImage, ScrollPosition, trackWindowScroll } from 'react-lazy-load-image-component'
-import { Project } from "../../model"
-import { translationPaths } from "../../translations/translations"
-import { Translate } from "react-localize-redux"
-import theme from "../../Theme/Main"
 import placeholder from '../../assets/images/placeholder.jpg'
+import { Project } from "../../model"
 
 
 interface ProjectCardProps {
@@ -18,17 +15,17 @@ interface ProjectCardProps {
 const ProjectCard = (props: ProjectCardProps) => {
    const [hovered, setHovered] = React.useState<boolean>(false)
 
-   const handleOpenLive = () => {
-      if (props.project.liveLink) {
-         window.open(props.project.liveLink, '_blank')?.focus()
-      }
-   }
+   // const handleOpenLive = () => {
+   //    if (props.project.liveLink) {
+   //       window.open(props.project.liveLink, '_blank')?.focus()
+   //    }
+   // }
 
-   const handleOpenGithub = () => {
-      if (props.project.githubLink) {
-         window.open(props.project.githubLink, '_blank')?.focus()
-      }
-   }
+   // const handleOpenGithub = () => {
+   //    if (props.project.githubLink) {
+   //       window.open(props.project.githubLink, '_blank')?.focus()
+   //    }
+   // }
 
    return (
       <MasonryItem

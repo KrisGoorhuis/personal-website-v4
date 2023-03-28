@@ -1,13 +1,13 @@
+import Masonry from '@mui/lab/Masonry'
 import { Box, Container } from '@mui/material'
 import { LocalizeContextProps, withLocalize } from 'react-localize-redux'
+import './App.css'
 import ApplicationBar from './components/ApplicationBar'
 // import Footer from './components/Footer/Footer'
 import Head from './components/Head/Head'
 import ProjectCard from './components/ProjectCards/ProjectCard'
 import { CorporateProject, Projects } from './projects'
 import theme from './Theme/Main'
-import Masonry from '@mui/lab/Masonry'
-import './App.css'
 
 interface AppProps extends LocalizeContextProps {
 

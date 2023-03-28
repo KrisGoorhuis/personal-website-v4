@@ -1,14 +1,13 @@
-import React from "react"
-import { Construction, Description } from '@mui/icons-material'
-import { AppBar, Box, IconButton, ModalUnstyled, styled, Toolbar, Typography } from "@mui/material"
-import { LocalizeContextProps, Translate, withLocalize } from "react-localize-redux"
-import LanguageMenu from "./LanguageMenu/LanguageMenu"
-import Language from '@mui/icons-material/Language'
+import { Construction } from '@mui/icons-material'
 import Close from '@mui/icons-material/Close'
+import Language from '@mui/icons-material/Language'
+import { AppBar, Box, IconButton, ModalUnstyled, styled, Toolbar, Typography } from "@mui/material"
+import React from "react"
+import { LocalizeContextProps, Translate, withLocalize } from "react-localize-redux"
+import transparentLogo from '../../assets/images/transparentLogoDark.png'
 import { SupportedLanguageCodes } from "../../model"
 import { translationPaths } from "../../translations/translations"
-import transparentLogo from '../../assets/images/transparentLogoDark.png'
-import resume from '../../assets/resume.pdf'
+import LanguageMenu from "./LanguageMenu/LanguageMenu"
 
 
 interface ApplicationBarProps extends LocalizeContextProps {

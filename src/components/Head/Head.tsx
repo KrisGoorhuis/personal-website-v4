@@ -1,23 +1,20 @@
-import { Box, Typography, Button, Stack } from "@mui/material"
-import { LazyLoadImage } from "react-lazy-load-image-component"
+import { Box, Typography } from "@mui/material"
 import { Translate } from "react-localize-redux"
+import '../../App.css'
 import theme from "../../Theme/Main"
 import { translationPaths } from "../../translations/translations"
-import self from '../../assets/images/self.jpeg'
-import placeholder from '../../assets/images/placeholder.jpg'
-import '../../App.css'
 
 
 const Head = () => {
 
-   const handleCallOne = () => {
-      const element = document.getElementById('scroll-target')
-      element?.scrollIntoView()
-   }
+   // const handleCallOne = () => {
+   //    const element = document.getElementById('scroll-target')
+   //    element?.scrollIntoView()
+   // }
 
-   const handleCallTwo = () => {
-      window.open("https://github.com/KrisGoorhuis", '_blank')?.focus()
-   }
+   // const handleCallTwo = () => {
+   //    window.open("https://github.com/KrisGoorhuis", '_blank')?.focus()
+   // }
 
 
    return (
