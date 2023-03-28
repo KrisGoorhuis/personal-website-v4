@@ -23,7 +23,7 @@ function App(props: AppProps) {
 
       </div>
       <main style={{ background: theme.black.light, zIndex: -2, paddingTop: 175 }}>
-        <Box sx={{ pt: 8, pb: 6, justifyContent: 'center', width: '100%', marginBottom: 15 }} >
+        <Box sx={{ pt: 13, pb: 13, justifyContent: 'center', width: '100%', marginBottom: 15 }} >
           <Head />
         </Box>
 
