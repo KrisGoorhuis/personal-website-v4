@@ -14,12 +14,14 @@ interface AppProps extends LocalizeContextProps {
 }
 
 function App(props: AppProps) {
-
+ 
   console.log("App, man")
 
   return (
     <ApplicationBar>
+      <div style={{display: 'relative', position: 'absolute', width: '100%', height: '100%'}}>
 
+      </div>
       <main style={{ background: theme.black.light, zIndex: -2, paddingTop: 175 }}>
         <Box sx={{ pt: 8, pb: 6, justifyContent: 'center', width: '100%', marginBottom: 15 }} >
           <Head />

@@ -90,14 +90,14 @@ const ApplicationBar = (props: ApplicationBarProps) => {
             </div>
 
             <div>
-              <a download style={{textDecoration: 'none'}} href={resume}>
+              {/* <a download style={{textDecoration: 'none'}} href={resume}>
                 <IconButton style={{ marginRight: 10 }}>
                   <Description />
                   <Typography>
                     cv
                   </Typography>
                 </IconButton>
-              </a>
+              </a> */}
 
               <IconButton
                 onClick={handleLanguageMenu}

@@ -31,13 +31,13 @@ const Head = () => {
             >
                <Translate id={translationPaths.splash.title} />
             </Typography>
-            <Typography variant="subtitle1" align="center" color={'white'} paragraph>
+            {/* <Typography variant="subtitle1" align="center" color={'white'} paragraph>
                <Translate id={translationPaths.splash.subtitle} />
-            </Typography>
+            </Typography> */}
             <Typography variant="h4" align="center" color={'white'} paragraph>
                <Translate id={translationPaths.splash.description} />
             </Typography>
-            <Stack
+            {/* <Stack
                sx={{ pt: 4 }}
                direction="row"
                spacing={2}
@@ -49,11 +49,11 @@ const Head = () => {
                <Button onClick={handleCallTwo} color="primary" variant="outlined">
                   <Translate id={translationPaths.splash.callTwo} />
                </Button>
-            </Stack>
+            </Stack> */}
          </Box>
 
 
-         <Box className={"portrait"} sx={{ flexBasis: '20%', border: `5px solid ${theme.red.main}`, borderRadius: '50%', zIndex: 1 }}>
+         {/* <Box className={"portrait"} sx={{ flexBasis: '20%', border: `5px solid ${theme.red.main}`, borderRadius: '50%', zIndex: 1 }}>
             <Box style={{ borderRadius: '50%', overflow: 'hidden', objectFit: 'contain', maxWidth: 400, borderColor: theme.gold.main, borderWidth: 5, zIndex: 2 }}>
                <LazyLoadImage
                   alt={`portrait`}
@@ -76,7 +76,7 @@ const Head = () => {
                zIndex: -1
             }}>
             </Box>
-         </Box>
+         </Box> */}
       </Box>
    )
 }

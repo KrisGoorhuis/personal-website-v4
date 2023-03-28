@@ -46,9 +46,13 @@ const translations = {
       "Kris G",
       "Kris G"
     ],
+    // construction: [
+    //   "Under active construction",
+    //   "En construction active"
+    // ]
     construction: [
-      "Under active construction",
-      "En construction active"
+      "Down for renovations. Come back later",
+      "Vers le bas pour rénovations. Revenez plus tard"
     ]
   },
   splash: {
@@ -56,12 +60,20 @@ const translations = {
       "Kris Goorhuis",
       "Kris Goorhuis",
     ],
+    // subtitle: [
+    //   "Developer | Hobbyist Native, C#, and Python Developer | Freelance Writer",
+    //   "Développeur Web | Développeur amateur Natif, C# et Python | Rédacteur indépendant"
+    // ],
+    // description: [
+    //   "Self-taught developer specialized in React and GraphQL, learning Nest. Highly practiced in quitting caffeine.",
+    //   "Développeur autodidacte spécialisé en React et GraphQL, learning Nest. Très pratiqué pour arrêter la caféine."
+    // ],
     subtitle: [
-      "Developer | Hobbyist Native, C#, and Python Developer | Freelance Writer",
+      "Web Developer | Hobbyist Native, C#, and Python Developer | Freelance Writer",
       "Développeur Web | Développeur amateur Natif, C# et Python | Rédacteur indépendant"
     ],
     description: [
-      "Self-taught developer specialized in React and GraphQL, learning Nest. Highly practiced in quitting caffeine.",
+      "Hi! I took the function out of this site. It used to be my resume. Come back later enough and it'll be something cool",
       "Développeur autodidacte spécialisé en React et GraphQL, learning Nest. Très pratiqué pour arrêter la caféine."
     ],
     callOne: [

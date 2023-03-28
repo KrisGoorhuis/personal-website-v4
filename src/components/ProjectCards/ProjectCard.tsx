@@ -74,7 +74,7 @@ const ProjectCard = (props: ProjectCardProps) => {
                   color: 'white',
                }}
             >
-               <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '90%', flexShrink: 1 }}>
+               {/* <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '90%', flexShrink: 1 }}>
                   <Typography gutterBottom variant={props.isBig ? "h4" : "h5"} component="h2" style={{ color: theme.gold.main }}>
                      <Translate id={props.project.name} />
                   </Typography>
@@ -111,15 +111,14 @@ const ProjectCard = (props: ProjectCardProps) => {
                         }
                      </CardActions>
 
-                     {/* {
+                     {
                         props.project.technologies &&
                         <div style={{ fontSize: 10, paddingRight: 40 }}>
                            Built with {props.project.technologies?.join(', ')}
                         </div>
-                     } */}
+                     }
                   </div>
-
-               </div>
+               </div> */}
 
             </CardContent>
          </Card>
