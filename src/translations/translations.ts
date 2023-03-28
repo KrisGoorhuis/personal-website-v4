@@ -74,7 +74,7 @@ const translations = {
     ],
     description: [
       "Hi! I took the function out of this site. It used to be my resume. Come back later enough and it'll be something cool",
-      "Développeur autodidacte spécialisé en React et GraphQL, learning Nest. Très pratiqué pour arrêter la caféine."
+      "Salut! J'ai retiré la fonction de ce site. C'était mon CV. Reviens assez tard et ce sera quelque chose de cool"
     ],
     callOne: [
       "See shareable work",
